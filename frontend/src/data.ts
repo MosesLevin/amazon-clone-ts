@@ -1,0 +1,53 @@
+import { Product } from './types/Product'
+
+// create sampleproducts array in the template of Product.ts (in types folder) and set to array
+export const sampleProducts: Product[] = [
+  {
+    name: 'DeLonghi Coffee Maschine',
+    slug: 'delonghi-coffee-maschine',
+    category: 'Beverages',
+    image: '../public/p1.png',
+    brand: 'DeLonghi',
+    price: 139.99,
+    countInStock: 8,
+    description: 'high quality coffee maschine',
+    rating: 4.5,
+    reviewNum: 17,
+  },
+  {
+    name: 'iPhone 11',
+    slug: 'iphone-11',
+    category: 'Mobile Phones',
+    image: '../public/p2.png',
+    brand: 'Apple',
+    price: 139.99,
+    countInStock: 8,
+    description: 'high quality coffee maschine',
+    rating: 4.6,
+    reviewNum: 17,
+  },
+  {
+    name: 'Cassal Leggings',
+    slug: 'cassal-leggings',
+    category: 'Clothing',
+    image: '../public/p3.png',
+    brand: 'Cassal',
+    price: 39.99,
+    countInStock: 27,
+    description: 'Comfortable Carbon Leggings',
+    rating: 4.4,
+    reviewNum: 8,
+  },
+  {
+    name: 'Nike Air Jordan Sneakers',
+    slug: 'nike-air-jordan',
+    category: 'Shoes',
+    image: '../public/p4.jpg',
+    brand: 'Nike',
+    price: 89.99,
+    countInStock: 3,
+    description: 'Nike Air Jordan 3',
+    rating: 3.9,
+    reviewNum: 4,
+  },
+]
