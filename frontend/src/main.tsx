@@ -11,6 +11,11 @@ import App from './App.tsx'
 import ProductPage from './pages/ProductPage.tsx'
 import Homepage from './pages/Homepage.tsx'
 import './index.css'
+import axios from 'axios'
+
+// defining if we're in development or build, accordingly
+axios.defaults.baseURL =
+  process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : '/'
 
 const router = createBrowserRouter(
   // creates route objects from routes which aren't objects
