@@ -1,5 +1,5 @@
 import { Container, Nav, Navbar, Row, Col } from 'react-bootstrap'
-import { sampleProducts } from './data'
+import { Outlet } from 'react-router-dom'
 
 function App() {
   return (
@@ -21,20 +21,8 @@ function App() {
       </header>
       <main>
         <Container className="mt-3">
-          <Row>
-            {sampleProducts.map((product) => (
-              //set key to unique key of map like slug which is unique because of SEO, with bootstrap for smaller device view
-              <Col key={product.slug} sm={6} md={4} lg={3}>
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  className="product-image"
-                />
-                <h2>{product.name}</h2>
-                <p>{'$' + product.price}</p>
-              </Col>
-            ))}
-          </Row>
+          {/* Outlet is a placeholder for the routes in createBrowserRouter */}
+          <Outlet />
         </Container>
       </main>
       <footer>
