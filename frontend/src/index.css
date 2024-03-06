@@ -14,3 +14,7 @@
   max-width: 300px;
   object-fit: contain;
 }
+
+.rating span {
+  color: #ffc000;
+}
